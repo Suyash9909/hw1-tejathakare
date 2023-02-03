@@ -63,11 +63,11 @@ def list_1D():
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
 
     # Inplace sort list l (use .sort() ).
-
+    l=l.sort()
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l =
+    new_l = l[3:10]
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -77,19 +77,21 @@ def list_2D():
     #   second row is [6, 10, 11]
     #   third row is [12, 17, 38]
 
-    A =
+    A = [[1, 4, 5],
+         [6, 10, 11],
+         [12, 17, 38]]
 
     # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column =
+    last_column = [row[2] for row in A]
 
     # Get the item at the last row and last column of A.
 
-    a =
+    a = [A[2][2] for i in [2]]
 
     # Get the item at row 2 and column 1 of A.
 
-    b =
+    b = [A[1][0] for i in [2]]
 
 
     return A,last_column, a, b
@@ -103,14 +105,14 @@ def dictionary():
     #   "fruit" => "apple"
     #   "quantity" => 18
     #   "color" => "red"
-    fruit_dict =
+    fruit_dict = {'fruit': 'apple', 'quantity': 18, 'color': 'red'}
     
     # Get the item in dictionary fruit_dict that the key "fruit" maps to.
 
-    f =
+    f = fruit_dict['fruit']
 
     # Increase the value that key "quantity" map to by 1.
-
+    fruit_dict['quantity'] += 1
 
     return fruit_dict, f
 def dictionary_nested():
