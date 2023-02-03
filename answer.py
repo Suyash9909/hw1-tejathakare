@@ -9,9 +9,9 @@ def number():
        This is to review numbers and basic operations.
        """
     # Write the value 4 to the power of 5 and assign it to variable x.
-    x =
+    x = 4**5
     # Write the value x divided by 3 and assign it to variable y.
-    y =
+    y = x/3
     return x,y
 
 def strings():
@@ -21,23 +21,23 @@ def strings():
 
     # Assign a string "stevens" to a variable stevens.
 
-    stevens =
+    stevens = "stevens"
 
     # Repeat variable stevens 7 times and assign it to variable stevens_7.
 
-    stevens_7 =
+    stevens_7 = stevens*7
 
     # What is the length of stevens_7?
 
-    length =
+    length = len(stevens_7)
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
 
-    great =
+    great = stevens + " is great"
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
-    good =
+    good = great.replace(" is great", " is good")
 
     return stevens, stevens_7, length, great, good
 
@@ -49,15 +49,15 @@ def list_1D():
     s = " hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
-    hoboken =
+    hoboken = s.rstrip()
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
-    hoboken_list =
+    hoboken_list = hoboken.split(',')
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
-    hoboken_first_item =
+    hoboken_first_item = hoboken_list[0]
 
     ####
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
