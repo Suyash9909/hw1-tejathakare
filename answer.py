@@ -88,10 +88,12 @@ def list_2D():
     # Get the item at the last row and last column of A.
 
     a = [A[2][2] for i in [2]]
+    a=int(a)
 
     # Get the item at row 2 and column 1 of A.
 
     b = [A[1][0] for i in [2]]
+    b=int(b)
 
 
     return A,last_column, a, b
